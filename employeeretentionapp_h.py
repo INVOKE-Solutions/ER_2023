@@ -63,7 +63,7 @@ if check_password():
 
     st.set_page_config(
         page_title="Employe Retention Prediction App",
-        page_icon="./ER_2023/invoke_logo.jpg"
+        page_icon="invoke_logo.jpg"
 
     )
 
@@ -73,7 +73,7 @@ if check_password():
     ######################
     #main page layout
     ######################
-    st.image("./ER_2023/invoke_logo.jpg")
+    st.image("invoke_logo.jpg")
 
     st.title("Employee Retention Prediction")
 
@@ -84,7 +84,7 @@ if check_password():
     # st.sidebar.title(f"Welcome {name}")
 
     st.sidebar.title("Employee Info")
-    st.sidebar.image("./ER_2023/employee-retention.webp")
+    st.sidebar.image("employee-retention.webp")
     st.sidebar.write("Please choose parameters that descibe the employee")
 
     #input features
@@ -170,7 +170,7 @@ if check_password():
     #SHAP explainability
     ####################
 
-    df = pd.read_csv("./ER_2023/cleanedemployee.csv")
+    df = pd.read_csv("cleanedemployee.csv")
 
     #encoding categorical varible
     department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
