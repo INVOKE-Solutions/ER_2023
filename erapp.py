@@ -9,8 +9,9 @@ import numpy as np
 import pickle as pkl
 # import shap
 import streamlit.components.v1 as components
-import streamlit_authenticator as stauth
-from pathlib import Path
+from google.oauth2 import service_account
+from gsheetsdb import connect
+
 
 ####################
 #USER AUTHENTICATION
@@ -53,10 +54,6 @@ def check_password():
 ###############
 
 if check_password():
-
-    # model_path = "modelERv5.pkl"
-    # with open(model_path, "rb") as file:
-    #     model = pkl.load(file)
 
     #Load the saved model (V5)
     model=pkl.load(open("modelERv5.pkl","rb"))
@@ -169,6 +166,18 @@ if check_password():
     ####################
     #SHAP explainability
     ####################
+
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=[
+            "https://www.googleapis.com/auth/spreadsheets",
+        ],
+    )
+    conn = connect(credentials=credentials)
+
+    @st.cache_data(ttl=600)
+    sheet_url = st.secrets["private_gsheets_url"]
+
 
     df = pd.read_csv("cleanedemployee.csv")
 
