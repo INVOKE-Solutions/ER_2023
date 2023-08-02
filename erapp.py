@@ -84,7 +84,7 @@ if check_password():
     # st.sidebar.title(f"Welcome {name}")
 
     st.sidebar.title("Employee Info")
-    st.sidebar.image("employee-retention.webp")
+    st.sidebar.image("er.webp")
     st.sidebar.write("Please choose parameters that descibe the employee")
 
     #input features
@@ -170,7 +170,7 @@ if check_password():
     #SHAP explainability
     ####################
 
-    df = pd.read_csv("cleanedemployee.csv")
+    df = pd.read_csv("cleaneddata.csv")
 
     #encoding categorical varible
     department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
