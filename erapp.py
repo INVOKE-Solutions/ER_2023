@@ -9,8 +9,10 @@ import numpy as np
 import pickle as pkl
 # import shap
 import streamlit.components.v1 as components
-import streamlit_authenticator as stauth
-from pathlib import Path
+from google.oauth2 import service_account
+from gsheetsdb import connect
+import gspread
+
 
 ####################
 #USER AUTHENTICATION
@@ -54,10 +56,6 @@ def check_password():
 
 if check_password():
 
-    # model_path = "modelERv5.pkl"
-    # with open(model_path, "rb") as file:
-    #     model = pkl.load(file)
-
     #Load the saved model (V5)
     model=pkl.load(open("modelERv5.pkl","rb"))
 
@@ -84,7 +82,7 @@ if check_password():
     # st.sidebar.title(f"Welcome {name}")
 
     st.sidebar.title("Employee Info")
-    st.sidebar.image("employee-retention.webp")
+    st.sidebar.image("er.webp")
     st.sidebar.write("Please choose parameters that descibe the employee")
 
     #input features
@@ -167,10 +165,33 @@ if check_password():
 
 
     ####################
+    #Export data from gdrive
+    #####################
+
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["type"],
+        scopes=[
+            "https://www.googleapis.com/auth/spreadsheets",
+        ],
+    )
+    conn = connect(credentials=credentials)
+
+    # @st.cache_data(ttl=600)
+    sheet_url = st.secrets["private_gsheets_url"]
+
+    gc = gspread.authorize(credentials)
+    sheet = gc.open_by_url(sheet_url).sheet1  # Replace 'sheet1' with the specific sheet name if needed
+    data = sheet.get_all_records()
+
+    # Convert the data to a pandas DataFrame
+    df = pd.DataFrame(data)
+
+    # df = pd.read_csv("cleanedemployee.csv")
+
+    ####################
     #SHAP explainability
     ####################
 
-    df = pd.read_csv("cleanedemployee.csv")
 
     #encoding categorical varible
     department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
