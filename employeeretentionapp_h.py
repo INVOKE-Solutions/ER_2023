@@ -59,7 +59,7 @@ if check_password():
     #     model = pkl.load(file)
 
     #Load the saved model (V5)
-    model=pkl.load(open("./ER_2023/modelERv5.pkl","rb"))
+    model=pkl.load(open("modelERv5.pkl","rb"))
 
     st.set_page_config(
         page_title="Employe Retention Prediction App",
