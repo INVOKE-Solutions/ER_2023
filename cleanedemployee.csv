@@ -1,0 +1,211 @@
+dept,Month of resignation,age_group,POSTDIC SCORE 2021,postdic,promoted,travel,distance,marital,edu,grad,Status,age_left,age_joined,duration,salary,experience
+FINANCE,8.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,22.0,Married,PC,L,left,31.0,29,29,6800.0,8.0
+DIGITAL MARKETING,8.0,35-39,NOT APPLICABLE,NOT APPLICABLE,NO,NO,36.0,Married,STP,L,left,35.0,32,43,2713.33,6.0
+CREATIVE,,30-34,1.1 - 2.9 [Req Imp],3.0 - 3.9 [Good Work Attitude],NO,NO,28.0,Married,Dg,L,stay,34.0,27,79,8910.0,13.0
+CREATIVE,,30-34,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,36.0,Married,Dip,L,stay,32.0,25,79,4010.0,10.0
+CALL CENTRE,,30-34,3.0 - 3.9 [Good Work Attitude],1.1 - 2.9 [Req Imp],NO,NO,35.0,Married,Dip,L,stay,34.0,27,79,7100.0,13.0
+CORPORATE SERVICES,12.0,55-59,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,14.0,Married,Dg,O,left,58.0,52,73,7050.0,33.0
+CORPORATE SERVICES,,55-59,NOT APPLICABLE,NOT APPLICABLE,NO,NO,6.0,Widow,HS,L,stay,56.0,49,79,2200.0,13.0
+CALL CENTRE,11.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,32.0,Married,HS,L,left,27.0,23,57,2378.75,8.0
+CORPORATE SERVICES,7.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,8.0,Married,Dip,L,left,31.0,28,77,1375.0,15.0
+CALL CENTRE,7.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,28.0,Single,Dg,L,left,28.0,23,65,1601.56,10.0
+CALL CENTRE,,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,55.0,Married,HS,L,stay,29.0,23,77,3300.0,6.0
+CALL CENTRE,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,7.0,Married,Dg,L,stay,31.0,25,77,3000.0,8.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,4.0,Single,Dip,L,stay,29.0,23,77,3000.0,8.0
+CALL CENTRE,5.0,35-39,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.0,Married,HS,L,left,32.0,29,39,2449.0,12.0
+CALL CENTRE,3.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,18.710045662100455,Married,Cert,L,left,30.0,27,38,2449.0,8.0
+CREATIVE,,30-34,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,11.0,Married,Dg,L,stay,30.0,24,76,4950.0,13.0
+CALL CENTRE,3.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,20.7,Single,Dg,L,left,34.0,28,74,2825.0,16.0
+COMMERCIAL,6.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,YES,8.0,Single,Dg,O,left,27.0,22,56,4260.0,6.0
+CALL CENTRE,9.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,9.0,Single,Dg,L,left,28.0,23,62,3105.0,6.0
+CREATIVE,,30-34,1.1 - 2.9 [Req Imp],3.0 - 3.9 [Good Work Attitude],NO,YES,37.0,Married,Cert,L,stay,31.0,25,74,4540.0,9.0
+CREATIVE,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,YES,10.6,Single,Dg,O,stay,29.0,28,12,3360.0,4.0
+DIGITAL MARKETING,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,16.6,Single,Dg,L,stay,27.0,26,12,3200.0,2.0
+SYSTEM,6.0,45-49,Above 4.0 [Positive Influence],3.0 - 3.9 [Good Work Attitude],NO,YES,8.2,Single,Dg,O,left,46.0,40,72,11700.0,24.0
+DIGITAL MARKETING,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,YES,18.3,Married,Dg,L,stay,31.0,25,72,8800.0,6.0
+DIGITAL MARKETING,,40-44,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,YES,24.9,Single,HS,L,stay,42.0,37,57,3490.0,11.0
+CREATIVE,2.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,20.2,Married,Dg,L,left,31.0,26,54,3740.0,7.0
+CORPORATE SERVICES,,40-44,1.1 - 2.9 [Req Imp],NOT APPLICABLE,NO,YES,12.1,Married,HS,L,stay,40.0,35,62,3030.0,5.0
+ANALYTICS,1.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,13.1,Single,M,O,left,30.0,26,41,5500.0,4.0
+DIGITAL MARKETING,,30-34,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,14.3,Married,Dg,L,stay,33.0,27,67,4610.0,9.0
+CREATIVE,4.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,31.2,Married,Dg,L,left,28.0,22,65,4400.0,10.0
+ANALYTICS,8.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,YES,20.5,Single,Dg,L,left,26.0,22,43,4340.0,6.0
+CALL CENTRE,,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,15.4,Single,Dip,L,stay,26.0,21,63,3000.0,5.0
+DIGITAL MARKETING,,35-39,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,31.2,Married,Dip,L,stay,35.0,30,63,4260.0,11.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,6.4,Single,Dip,L,stay,29.0,24,63,3065.0,8.0
+CORPORATE SERVICES,12.0,45-49,NOT APPLICABLE,NOT APPLICABLE,NO,YES,0.0,Divorce,HS,L,left,47.0,43,55,2400.0,5.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,3.8,Married,Dip,L,stay,29.0,24,57,2270.0,7.0
+CALL CENTRE,,30-34,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,10.7,Married,HS,L,stay,32.0,26,67,2650.0,12.0
+PRODUCTS,,25-29,Above 4.0 [Positive Influence],3.0 - 3.9 [Good Work Attitude],NO,NO,30.2,Single,Dg,L,stay,29.0,24,56,4000.0,5.0
+COMMERCIAL,7.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,YES,24.2,Married,Dg,L,left,26.0,22,45,6000.0,7.0
+ANALYTICS,,30-34,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],YES,YES,18.710045662100455,Married,Dg,O,stay,34.0,29,56,6200.0,8.0
+COMMERCIAL,9.0,30-34,NOT APPLICABLE,NOT APPLICABLE,YES,YES,14.9,Married,M,O,left,28.0,24,48,7250.0,6.0
+SYSTEM,8.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,14.5,Married,Dg,L,left,27.0,25,30,5300.0,6.0
+PRODUCTS,2.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,3.0,Married,M,L,left,28.0,26,25,3585.0,4.0
+PRODUCTS,9.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,0.4,Married,Dg,L,left,27.0,25,27,3375.0,4.0
+DIGITAL MARKETING,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,11.3,Married,Dg,L,stay,30.0,26,52,4000.0,5.0
+PRODUCTS,,35-39,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,4.5,Married,M,L,stay,35.0,31,52,5300.0,12.0
+CREATIVE,2.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,10.9,Single,Dg,L,left,26.0,23,36,3500.0,4.0
+COMMERCIAL,6.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,27.0,Single,Dg,L,left,26.0,25,16,3760.0,6.0
+CREATIVE,12.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,YES,34.0,Single,Dg,L,left,30.0,28,33,3360.0,7.0
+DIGITAL MARKETING,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,YES,21.0,Single,Dg,L,stay,26.0,23,37,4350.0,3.0
+PRODUCTS,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,YES,16.6,Single,Dg,O,stay,27.0,23,50,6300.0,8.0
+SYSTEM,9.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,14.8,Single,Dg,L,left,28.0,25,40,5600.0,7.0
+ANALYTICS,9.0,30-34,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,YES,10.4,Married,Dg,O,left,29.0,26,40,4800.0,4.0
+COMMERCIAL,7.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,YES,27.0,Single,Dg,L,left,26.0,25,14,3600.0,5.0
+SYSTEM,10.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,38.4,Single,Dg,L,left,26.0,25,16,3680.0,4.0
+DIGITAL MARKETING,9.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,14.3,Married,Dg,L,left,29.0,28,13,3710.0,4.0
+CREATIVE,,25-29,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,YES,12.7,Single,Dg,L,stay,27.0,23,43,4230.0,4.0
+SYSTEM,4.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,18.4,Single,Dg,L,left,25.0,24,5,3385.0,4.0
+SYSTEM,6.0,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,11.2,Married,M,O,left,28.0,24,43,5600.0,4.0
+CORPORATE SERVICES,,30-34,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,15.0,Married,M,L,stay,32.0,28,43,4640.0,8.0
+SYSTEM,7.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,21.6,Single,Dg,O,left,25.0,23,29,5000.0,3.0
+TALENT MANAGEMENT,,30-34,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,YES,19.3,Single,Dg,L,stay,32.0,28,42,6800.0,7.0
+SYSTEM,9.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,7.7,Single,Dg,L,left,26.0,24,31,4200.0,3.0
+DIGITAL MARKETING,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],YES,NO,11.3,Single,Dg,O,stay,27.0,26,17,5800.0,5.0
+SYSTEM,9.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,33.6,Married,Dg,L,left,30.0,28,29,4800.0,5.0
+SYSTEM,2.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,23.1,Single,Dg,L,left,25.0,23,24,3330.0,3.0
+SYSTEM,10.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,8.9,Single,Dg,L,left,24.0,24,2,3200.0,3.0
+DIGITAL MARKETING,6.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,13.6,Single,Dg,O,left,28.0,27,16,4300.0,5.0
+ANALYTICS,9.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,27.2,Single,M,L,left,31.0,31,5,3800.0,3.0
+SYSTEM,5.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,29.2,Married,M,O,left,29.0,29,2,3700.0,8.0
+SYSTEM,3.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.7,Single,Dg,L,left,25.0,24,13,3200.0,3.0
+SYSTEM,10.0,30-34,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,29.6,Married,M,O,left,29.0,27,28,4400.0,6.0
+SYSTEM,5.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,1.0,Married,Dg,L,left,31.0,29,24,4200.0,11.0
+SYSTEM,,30-34,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,19.8,Married,Dg,L,stay,34.0,31,37,7000.0,11.0
+SYSTEM,1.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,38.1,Single,Dg,L,left,26.0,24,19,3450.0,3.0
+SYSTEM,10.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,30.0,Single,M,O,left,26.0,24,28,4750.0,3.0
+SYSTEM,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,18.7,Married,Dg,L,stay,31.0,28,37,4890.0,7.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,26.4,Married,Dip,L,stay,29.0,26,39,2320.0,9.0
+CALL CENTRE,9.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.1,Single,HS,L,left,26.0,26,6,1800.0,5.0
+CALL CENTRE,4.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.1,Single,HS,L,left,27.0,27,1,1500.0,3.0
+CALL CENTRE,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,1.0,Married,Dip,L,stay,30.0,27,39,2210.0,7.0
+CALL CENTRE,1.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.0,Single,Dip,L,left,27.0,26,8,2000.0,6.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,13.1,Married,HS,L,stay,29.0,26,39,2320.0,11.0
+ANALYTICS,7.0,35-39,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,YES,16.0,Single,M,L,left,34.0,32,25,6100.0,12.0
+SYSTEM,6.0,30-34,Above 4.0 [Positive Influence],NOT APPLICABLE,YES,NO,23.0,Single,Dg,O,left,30.0,28,24,4900.0,7.0
+SYSTEM,7.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,19.8,Single,Dg,O,left,27.0,25,25,4100.0,3.0
+DIGITAL MARKETING,7.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,8.9,Single,Dg,L,left,24.0,23,15,3250.0,3.0
+FINANCE,1.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,30.0,Single,PC,O,left,26.0,25,6,3500.0,6.0
+CREATIVE,1.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,21.2,Single,Dg,L,left,24.0,23,4,3200.0,9.0
+COMMERCIAL,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,YES,30.0,Single,Dg,O,stay,25.0,22,36,7000.0,3.0
+COMMERCIAL,10.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,YES,15.4,Single,M,O,left,24.0,23,15,3750.0,3.0
+COMMERCIAL,8.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,YES,22.0,Single,Dg,O,left,26.0,25,12,3680.0,5.0
+DIGITAL MARKETING,8.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,0.0,Single,Dg,L,left,22.0,22,0,3200.0,3.0
+CREATIVE,,25-29,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,YES,18.710045662100455,Married,Dg,L,stay,27.0,24,33,4120.0,4.0
+CREATIVE,,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,YES,17.2,Married,Dg,L,stay,27.0,24,31,4260.0,4.0
+CREATIVE,2.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,8.1,Single,Dg,L,left,30.0,28,17,3685.0,5.0
+COMMERCIAL,2.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,YES,23.0,Single,Dg,L,left,25.0,22,29,4800.0,3.0
+DIGITAL MARKETING,12.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,16.4,Single,Dg,O,left,23.0,22,16,3800.0,3.0
+SYSTEM,10.0,25-29,NOT APPLICABLE,NOT APPLICABLE,YES,NO,11.8,Single,Dg,O,left,24.0,23,14,4000.0,3.0
+DIGITAL MARKETING,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,YES,20.2,Single,Dg,L,stay,30.0,27,33,5800.0,6.0
+DIGITAL MARKETING,4.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,31.5,Single,Dg,O,left,24.0,23,6,3200.0,3.0
+CALL CENTRE,12.0,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,29.8,Single,HS,L,left,28.0,27,14,1800.0,6.0
+CREATIVE,,30-34,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,17.4,Single,Dip,L,stay,33.0,30,31,4790.0,6.0
+ANALYTICS,7.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,25.1,Single,M,O,left,26.0,24,19,3900.0,3.0
+CORPORATE SERVICES,4.0,45-49,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.0,Divorce,HS,L,left,47.0,46,4,1500.0,3.0
+DIGITAL MARKETING,10.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,39.1,Single,Dg,L,left,25.0,24,9,3250.0,3.0
+COMMERCIAL,7.0,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,23.9,Single,Dg,L,left,27.0,24,31,3360.0,3.0
+CALL CENTRE,3.0,20-24,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,27.7,Married,Dip,L,left,22.0,20,15,1700.0,3.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,2.1,Single,Dip,L,stay,29.0,26,30,2360.0,4.0
+DIGITAL MARKETING,4.0,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,30.4,Married,Dg,L,left,27.0,24,28,3560.0,3.0
+CALL CENTRE,,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,4.1,Single,Dip,L,stay,29.0,26,30,1800.0,3.0
+CALL CENTRE,7.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,15.9,Single,Dg,L,left,25.0,23,18,2000.0,3.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,20.6,Single,Dg,L,stay,27.0,24,29,2050.0,3.0
+CALL CENTRE,10.0,30-34,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,4.2,Single,HS,L,left,31.0,29,20,2000.0,11.0
+DIGITAL MARKETING,4.0,30-34,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,17.1,Single,Dip,O,left,32.0,30,16,3450.0,8.0
+FINANCE,,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,40.9,Single,PC,L,stay,26.0,24,29,4120.0,2.0
+DIGITAL MARKETING,7.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,8.9,Single,Dg,O,left,24.0,24,5,3400.0,2.0
+COMMERCIAL,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,6.3,Single,Dg,L,stay,29.0,27,29,3250.0,2.0
+ANALYTICS,9.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,10.5,Single,Dg,O,left,25.0,24,19,4200.0,2.0
+SYSTEM,5.0,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,12.3,Married,M,O,left,27.0,25,27,4200.0,2.0
+SYSTEM,7.0,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,12.3,Single,M,O,left,27.0,25,28,4000.0,2.0
+CORPORATE SERVICES,5.0,30-34,Above 4.0 [Positive Influence],3.0 - 3.9 [Good Work Attitude],NO,NO,28.3,Single,Dg,L,left,25.0,23,25,3500.0,2.0
+CREATIVE,,35-39,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,31.3,Single,M,L,stay,35.0,33,27,4680.0,11.0
+ANALYTICS,7.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,YES,YES,25.8,Single,Dg,O,left,25.0,24,15,4200.0,5.225961538461538
+FINANCE,,25-29,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,31.0,Single,Dg,O,stay,27.0,25,26,3640.0,4.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],3.0 - 3.9 [Good Work Attitude],NO,NO,32.0,Married,Dip,L,stay,29.0,27,26,2200.0,8.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,2.7,Single,HS,L,stay,27.0,25,25,2100.0,6.0
+SYSTEM,5.0,25-29,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,NO,24.5,Married,Dg,O,left,28.0,26,21,3600.0,4.0
+COMMERCIAL,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],YES,YES,10.0,Single,Dg,O,stay,26.0,24,24,4210.0,2.0
+DIGITAL MARKETING,11.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,26.7,Single,Dg,L,left,27.0,26,15,3850.0,4.0
+SYSTEM,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,43.7,Single,Dg,L,stay,26.0,24,24,3710.0,2.0
+DIGITAL MARKETING,7.0,20-24,1.1 - 2.9 [Req Imp],Above 4.0 [Positive Influence],NO,NO,10.0,Single,Dg,O,left,24.0,22,24,3830.0,2.0
+DIGITAL MARKETING,12.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,22.1,Single,Dg,L,left,25.0,24,15,3560.0,2.0
+DIGITAL MARKETING,10.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,13.2,Single,Dg,L,left,26.0,25,14,3560.0,3.0
+DIGITAL MARKETING,,20-24,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,19.5,Single,Dg,L,stay,24.0,22,21,4040.0,3.0
+CREATIVE,,25-29,3.0 - 3.9 [Good Work Attitude],3.0 - 3.9 [Good Work Attitude],NO,YES,24.3,Single,Dg,O,stay,28.0,26,21,4060.0,6.0
+COMMERCIAL,2.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,69.4,Single,Dg,L,left,26.0,24,18,3650.0,2.0
+DIGITAL MARKETING,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,11.0,Single,M,L,stay,32.0,30,21,4070.0,6.0
+COMMERCIAL,12.0,20-24,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,35.6,Single,PC,L,left,23.0,22,15,3260.0,3.0
+DIGITAL MARKETING,7.0,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,20.3,Single,Dg,L,left,25.0,23,21,4030.0,2.0
+PRODUCTS,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,7.8,Single,Dg,L,stay,26.0,24,20,4060.0,2.0
+ANALYTICS,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,23.7,Single,Dg,O,stay,27.0,25,20,3400.0,2.0
+DIGITAL MARKETING,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,10.9,Single,Dg,L,stay,27.0,25,20,3550.0,7.0
+SYSTEM,,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,19.7,Single,Dg,L,stay,27.0,25,20,3520.0,2.0
+SYSTEM,3.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,56.9,Single,Dg,O,left,28.0,26,17,3300.0,5.0
+SYSTEM,5.0,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,22.3,Single,Dg,O,left,27.0,25,19,3580.0,3.0
+SYSTEM,7.0,25-29,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],NO,NO,17.8,Single,Dg,L,left,27.0,25,20,3540.0,2.0
+SYSTEM,8.0,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,29.5,Single,Dg,L,left,33.0,31,20,3610.0,9.0
+SYSTEM,6.0,25-29,Above 4.0 [Positive Influence],3.0 - 3.9 [Good Work Attitude],NO,NO,21.5,Single,Dg,L,left,28.0,26,20,3510.0,2.0
+SYSTEM,4.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,24.4,Single,M,O,left,28.0,26,18,3300.0,2.0
+SYSTEM,1.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,28.9,Married,Dg,L,left,29.0,27,16,3300.0,6.0
+SYSTEM,,30-34,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,12.2,Single,Dg,O,stay,30.0,28,20,3320.0,2.0
+SYSTEM,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,18.5,Single,Dg,L,stay,28.0,26,20,3300.0,4.0
+SYSTEM,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,21.1,Single,Dg,O,stay,28.0,26,20,3300.0,3.0
+CALL CENTRE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,14.0,Single,Dg,L,stay,27.0,25,20,1975.0,5.0
+FINANCE,,25-29,Above 4.0 [Positive Influence],Above 4.0 [Positive Influence],NO,NO,36.1,Single,PC,L,stay,26.0,24,19,3440.0,5.225961538461538
+DIGITAL MARKETING,5.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,NO,23.5,Single,Dg,O,left,24.0,23,6,3300.0,2.0
+ANALYTICS,10.0,25-29,Above 4.0 [Positive Influence],NOT APPLICABLE,NO,NO,21.1,Single,M,L,left,25.0,24,13,3300.0,3.0
+FINANCE,,30-34,3.0 - 3.9 [Good Work Attitude],Above 4.0 [Positive Influence],YES,YES,17.5,Married,PC,L,stay,30.0,28,19,7500.0,8.0
+CORPORATE SERVICES,7.0,25-29,3.0 - 3.9 [Good Work Attitude],NOT APPLICABLE,NO,YES,2.3,Married,Dg,O,left,28.0,27,6,5050.0,5.0
+DIGITAL MARKETING,7.0,20-24,1.1 - 2.9 [Req Imp],NOT APPLICABLE,NO,NO,34.8,Single,Dg,O,left,23.0,22,6,3250.0,2.0
+CALL CENTRE,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,2.1,Single,Dg,L,stay,27.0,25,18,1900.0,3.0
+CALL CENTRE,12.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,23.6,Single,Dg,L,left,25.0,24,12,1800.0,2.0
+COMMERCIAL,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],YES,YES,29.8,Married,Dg,O,stay,29.0,28,17,4400.0,5.0
+COMMERCIAL,6.0,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,26.7,Single,PC,L,left,24.0,23,17,3030.0,1.0
+CALL CENTRE,9.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,30.0,Single,Dip,L,left,28.0,28,7,1800.0,2.0
+CREATIVE,,20-24,NOT APPLICABLE,3.0 - 3.9 [Good Work Attitude],NO,NO,26.2,Married,Dip,L,stay,24.0,23,17,3000.0,1.0
+CALL CENTRE,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],YES,NO,24.4,Married,Dg,L,stay,26.0,25,16,2270.0,3.0
+CALL CENTRE,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,6.9,Single,Dg,L,stay,26.0,25,16,1900.0,1.0
+CREATIVE,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,44.9,Single,Dg,L,stay,27.0,26,15,3600.0,3.0
+CALL CENTRE,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,23.8,Married,Dip,L,stay,28.0,28,2,1900.0,8.0
+CREATIVE,,25-29,NOT APPLICABLE,3.0 - 3.9 [Good Work Attitude],NO,YES,8.7,Single,Dip,L,stay,26.0,25,14,1900.0,5.0
+ANALYTICS,10.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,YES,9.7,Married,Dg,L,left,28.0,28,6,3500.0,1.0
+PRODUCTS,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,12.6,Married,Dg,L,stay,27.0,26,14,3300.0,2.0
+COMMERCIAL,4.0,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,16.0,Single,PC,L,left,23.0,22,9,2780.0,1.0
+ANALYTICS,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,2.1,Single,Dg,L,stay,25.0,24,13,3390.0,1.0
+DIGITAL MARKETING,2.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,0.2,Single,Dg,O,left,26.0,25,6,3200.0,1.0
+DIGITAL MARKETING,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,27.9,Single,Dg,L,stay,26.0,25,12,3320.0,1.0
+ANALYTICS,,30-34,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,27.4,Single,Dg,O,stay,30.0,29,12,3380.0,4.0
+SYSTEM,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,36.8,Single,Dg,L,stay,27.0,26,9,3380.0,3.0
+SYSTEM,,30-34,NOT APPLICABLE,3.0 - 3.9 [Good Work Attitude],NO,NO,15.6,Single,Dg,O,stay,30.0,29,9,3310.0,2.0
+SYSTEM,,30-34,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,27.3,Single,Dg,O,stay,31.0,30,9,3330.0,5.0
+SYSTEM,,20-24,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,5.4,Single,Dg,L,stay,24.0,23,9,3320.0,1.0
+SYSTEM,,20-24,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,21.4,Single,Dg,L,stay,24.0,23,9,3350.0,1.0
+CREATIVE,,35-39,NOT APPLICABLE,3.0 - 3.9 [Good Work Attitude],NO,YES,15.0,Married,Dip,L,stay,37.0,36,14,4640.0,14.0
+ANALYTICS,6.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,34.9,Married,Dg,L,left,28.0,27,9,3200.0,4.0
+DIGITAL MARKETING,5.0,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,27.6,Single,Dg,L,left,26.0,25,8,3200.0,3.0
+CALL CENTRE,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.1,Married,HS,L,stay,29.0,28,8,1800.0,8.0
+ANALYTICS,,20-24,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,13.4,Single,Dg,O,stay,24.0,23,7,3330.0,1.0
+ANALYTICS,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,NO,28.9,Married,Dg,O,stay,26.0,25,7,3350.0,3.0
+CALL CENTRE,12.0,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,24.3,Single,Dg,L,left,23.0,23,2,1800.0,1.0
+CALL CENTRE,,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.1,Married,HS,L,stay,33.0,32,7,1700.0,11.0
+CALL CENTRE,,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,3.2,Single,Dip,L,stay,22.0,21,7,1800.0,1.0
+COMMERCIAL,,25-29,NOT APPLICABLE,Above 4.0 [Positive Influence],NO,YES,16.7,Single,Dg,O,stay,27.0,26,7,3455.0,1.0
+CALL CENTRE,2.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,10.5,Single,Dip,L,left,26.0,25,7,1800.0,5.0
+CALL CENTRE,,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.1,Married,Sijil,L,stay,30.0,29,5,1800.0,8.0
+CALL CENTRE,,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.3,Single,Dip,L,stay,23.0,23,4,1800.0,6.0
+CALL CENTRE,2.0,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,53.8,Single,Dg,L,left,25.0,25,0,2800.0,0.0
+CORPORATE SERVICES,,45-49,NOT APPLICABLE,NOT APPLICABLE,NO,NO,0.6,Married,HS,L,stay,48.0,48,4,1500.0,0.0
+CALL CENTRE,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,4.0,Married,HS,L,stay,26.0,26,3,1700.0,8.0
+CREATIVE,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,27.3,Single,Dg,L,stay,28.0,28,3,3200.0,5.0
+SYSTEM,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,3.6,Single,Dg,L,stay,25.0,25,2,3200.0,2.0
+SYSTEM,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,8.1,Single,Dg,O,stay,29.0,29,2,3200.0,0.0
+COMMERCIAL,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,39.6,Single,PC,L,stay,26.0,26,2,3300.0,1.0
+DIGITAL MARKETING,,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,23.7,Single,Dg,L,stay,24.0,24,2,3200.0,3.0
+COMMERCIAL,,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,0.0,Single,Dg,O,stay,23.0,23,2,2800.0,0.0
+ANALYTICS,,20-24,NOT APPLICABLE,NOT APPLICABLE,NO,NO,43.0,Single,Dg,L,stay,24.0,24,1,3200.0,0.0
+CORPORATE SERVICES,,35-39,NOT APPLICABLE,NOT APPLICABLE,NO,NO,2.4,Single,HS,L,stay,39.0,39,1,1500.0,0.0
+CALL CENTRE,,25-29,NOT APPLICABLE,NOT APPLICABLE,NO,NO,25.3,Single,STP,L,stay,28.0,28,1,1800.0,8.0
+CREATIVE,,30-34,NOT APPLICABLE,NOT APPLICABLE,NO,YES,20.5,Single,Dip,L,stay,34.0,34,0,3400.0,14.0
