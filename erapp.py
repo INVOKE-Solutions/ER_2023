@@ -11,6 +11,7 @@ import pickle as pkl
 import streamlit.components.v1 as components
 from google.oauth2 import service_account
 from gsheetsdb import connect
+import gspread
 
 
 ####################
@@ -81,7 +82,7 @@ if check_password():
     # st.sidebar.title(f"Welcome {name}")
 
     st.sidebar.title("Employee Info")
-    st.sidebar.image("employee-retention.webp")
+    st.sidebar.image("er.webp")
     st.sidebar.write("Please choose parameters that descibe the employee")
 
     #input features
@@ -164,22 +165,33 @@ if check_password():
 
 
     ####################
-    #SHAP explainability
-    ####################
+    #Export data from gdrive
+    #####################
 
     credentials = service_account.Credentials.from_service_account_info(
-        st.secrets["gcp_service_account"],
+        st.secrets["type"],
         scopes=[
             "https://www.googleapis.com/auth/spreadsheets",
         ],
     )
     conn = connect(credentials=credentials)
 
-    @st.cache_data(ttl=600)
+    # @st.cache_data(ttl=600)
     sheet_url = st.secrets["private_gsheets_url"]
 
+    gc = gspread.authorize(credentials)
+    sheet = gc.open_by_url(sheet_url).sheet1  # Replace 'sheet1' with the specific sheet name if needed
+    data = sheet.get_all_records()
 
-    df = pd.read_csv("cleanedemployee.csv")
+    # Convert the data to a pandas DataFrame
+    df = pd.DataFrame(data)
+
+    # df = pd.read_csv("cleanedemployee.csv")
+
+    ####################
+    #SHAP explainability
+    ####################
+
 
     #encoding categorical varible
     department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
