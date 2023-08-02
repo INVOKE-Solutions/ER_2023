@@ -126,6 +126,7 @@ tzdata==2023.3
 tzlocal==4.3.1
 urllib3==2.0.3
 validators==0.20.0
+watchdog==3.0.0
 wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
 webencodings==0.5.1
 websocket-client @ file:///opt/concourse/worker/volumes/live/5baed9cd-40fb-4fbe-6721-9568cdd0f2d7/volume/websocket-client_1614804245073/work
