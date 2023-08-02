@@ -192,10 +192,7 @@ if check_password():
     #SHAP explainability
     ####################
 
-<<<<<<< HEAD:erapp.py
     df = pd.read_csv("cleaneddata.csv")
-=======
->>>>>>> 9b5a9269b7dc4d21523a98995897686a06a7f2a8:erapp.py
 
     #encoding categorical varible
     department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
