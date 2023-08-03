@@ -9,6 +9,7 @@ import numpy as np
 import pickle as pkl
 # import shap
 import streamlit.components.v1 as components
+from PIL import Image
 from google.oauth2 import service_account
 from gsheetsdb import connect
 import gspread
@@ -33,6 +34,8 @@ def check_password():
 
     if "password_correct" not in st.session_state:
         st.header("Employee Retention Dashboard")
+        image = Image.open('invokeanalytics_logo.png')
+        st.image(image)
         st.text_input(
         "Please enter your password", type="password", on_change=password_entered, key="password"
         )
@@ -168,25 +171,23 @@ if check_password():
     #Export data from gdrive
     #####################
 
-    credentials = service_account.Credentials.from_service_account_info(
-        st.secrets["type"],
-        scopes=[
-            "https://www.googleapis.com/auth/spreadsheets",
-        ],
-    )
-    conn = connect(credentials=credentials)
+    # credentials = service_account.Credentials.from_service_account_info(
+    #     st.secrets["type"],
+    #     scopes=[
+    #         "https://www.googleapis.com/auth/spreadsheets",
+    #     ],
+    # )
+    # conn = connect(credentials=credentials)
 
-    # @st.cache_data(ttl=600)
-    sheet_url = st.secrets["private_gsheets_url"]
+    # # @st.cache_data(ttl=600)
+    # sheet_url = st.secrets["private_gsheets_url"]
 
-    gc = gspread.authorize(credentials)
-    sheet = gc.open_by_url(sheet_url).sheet1  # Replace 'sheet1' with the specific sheet name if needed
-    data = sheet.get_all_records()
+    # gc = gspread.authorize(credentials)
+    # sheet = gc.open_by_url(sheet_url).sheet1  # Replace 'sheet1' with the specific sheet name if needed
+    # data = sheet.get_all_records()
 
-    # Convert the data to a pandas DataFrame
-    df = pd.DataFrame(data)
-
-    # df = pd.read_csv("cleanedemployee.csv")
+    # # Convert the data to a pandas DataFrame
+    # df = pd.DataFrame(data)
 
     ####################
     #SHAP explainability
