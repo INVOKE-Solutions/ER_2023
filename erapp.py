@@ -7,13 +7,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import pickle as pkl
-# import shap
+import shap
+from sklearn.feature_extraction.text import TfidfVectorizer
 import streamlit.components.v1 as components
 from PIL import Image
 from google.oauth2 import service_account
 from gsheetsdb import connect
 import gspread
-
 
 ####################
 #USER AUTHENTICATION
@@ -81,56 +81,50 @@ if check_password():
     ######################
     #sidebar layout
     ######################
-    # authenticator.logout("Logout", "sidebar")
-    # st.sidebar.title(f"Welcome {name}")
+
 
     st.sidebar.title("Employee Info")
     st.sidebar.image("er.webp")
     st.sidebar.write("Please choose parameters that descibe the employee")
 
     #input features
-    dept = st.sidebar.selectbox("Department: ", ("ANALYTICS", "CALL CENTRE", "COMMERCIAL", "CORPORATE SERVICES", "CREATIVE", "DIGITAL MARKETING", "FINANCE", "PRODUCTS", "SYSTEM", "TALENT MANAGEMENT"))
-    age_group =st.sidebar.selectbox("Age Group:",("20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59") )
-    postdic =st.sidebar.selectbox("PostDic Score:",("1.1 - 2.9 [Req Imp]", "3.0 - 3.9 [Good Work Attitude]", "Above 4.0 [Positive Influence]", "NOT APPLICABLE") )
-    promoted =st.sidebar.radio("Promoted within the same year? :", ("Yes", "No"))
-    travel =st.sidebar.radio("Business Travel? :", ("Yes", "No"))
-    distance=st.sidebar.slider("Distance from Home (km):",min_value=1, max_value=100,step=1)
-    marital =st.sidebar.selectbox("Marital Status :",("Single", "Married", "Divorce", "Widow") )
-    edu =st.sidebar.selectbox("Education Level :",("High School", "STP", "Certificate", "Sijil", "Diploma", "Degree", "Masters", "PhD", "Professional Certificate"))
-    grad =st.sidebar.radio("Local or Overseas Grad? :",("Local", "Overseas") )
-    age_joined=st.sidebar.slider("Aged Joined:", min_value=20, max_value=70,step=1)
-    age_left=st.sidebar.slider("Current Age:",min_value=20, max_value=70,step=1)
-    ###logic for age
-    if age_left >= age_joined:
-            st.success("Success: Age accepted.")
-    else:
-            st.error("Error: Current age must be more than or equal to the age of joining.")
+    def get_user_input():
 
-    duration=st.sidebar.slider("Duration of Employment (months):",min_value=0, max_value=70,step=1)
-    salary=st.sidebar.slider("Monthly Salary (RM):",min_value=0, max_value=10000,step=50)
-    experience=st.sidebar.slider("Years of Experience:",min_value=0, max_value=30,step=1)
+        dept = st.sidebar.selectbox("Department: ", ("ANALYTICS", "CALL CENTRE", "COMMERCIAL", "CORPORATE SERVICES", "CREATIVE", "DIGITAL MARKETING", "FINANCE", "PRODUCTS", "SYSTEM", "TALENT MANAGEMENT"))
+        age_group =st.sidebar.selectbox("Age Group:",("20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59") )
+        postdic =st.sidebar.selectbox("PostDic Score:",("1.1 - 2.9 [Req Imp]", "3.0 - 3.9 [Good Work Attitude]", "Above 4.0 [Positive Influence]", "NOT APPLICABLE"), index = 1)
+        promoted =st.sidebar.radio("Promoted within the same year? :", ("Yes", "No"), index = 1)
+        travel =st.sidebar.radio("Business Travel? :", ("Yes", "No"))
+        distance=st.sidebar.slider("Distance from Home (km):",min_value=1, max_value=100,step=1, value = 15)
+        marital =st.sidebar.selectbox("Marital Status :",("Single", "Married", "Divorce", "Widow") )
+        edu =st.sidebar.selectbox("Education Level :",("High School", "STP", "Certificate", "Sijil", "Diploma", "Degree", "Masters", "PhD", "Professional Certificate"), index = 5)
+        grad =st.sidebar.radio("Local or Overseas Grad? :",("Local", "Overseas") )
+        age_joined = st.sidebar.number_input("Age Joined:", min_value=20, max_value=70, step=1, value=23, format="%d")
+        age_left = st.sidebar.number_input("Current Age:", min_value=20, max_value=70, step=1, value=24, format="%d")
 
+        ###logic for age
+        if age_left >= age_joined:
+                st.success("Success: Age accepted.")
+        else:
+                st.error("Error: Current age must be more than or equal to the age of joining.")
 
-    ######################
-    #processes
-    ######################
-
-    #Displace chosen varibles
-    user_input_dict={"dept" : [dept], "age_group":[age_group],"postdic": [postdic],"promoted": [promoted],"travel": [travel],
-                        "distance": [distance],"marital": [marital],"edu": [edu],"grad": [grad], 
-                        "age_joined":[age_joined],"age_left": [age_left],"duration": [duration],"salary": [salary],"experience": [experience]}
-        
-    user_input=pd.DataFrame(data=user_input_dict)
-
-
-
-    def preprocess(dept, age_group, postdic, promoted, travel, distance, marital, edu, grad, age_joined, age_left, duration, salary, experience):
+        duration=st.sidebar.number_input("Duration of Employment (months):",min_value=0, max_value=70,step=1, value = 12, format = "%d")
+        salary=st.sidebar.slider("Monthly Salary (RM):",min_value=0, max_value=10000,step=50, value = 3000)
+        experience=st.sidebar.number_input("Years of Experience:",min_value=0, max_value=30,step=1, value = 1, format = "%d")
 
         user_input_dict={"dept" : [dept], "age_group":[age_group],"postdic": [postdic],"promoted": [promoted],"travel": [travel],
                         "distance": [distance],"marital": [marital],"edu": [edu],"grad": [grad], 
                         "age_joined":[age_joined],"age_left": [age_left],"duration": [duration],"salary": [salary],"experience": [experience]}
         
-        user_input=pd.DataFrame(data=user_input_dict)
+        return user_input_dict
+    
+
+    #########################
+    #Data feature engineering
+    #########################
+
+
+    def preprocess(user_input:pd.DataFrame):
 
         cleaner_type = {"dept" : {"ANALYTICS" : 0, "CALL CENTRE" : 1, "COMMERCIAL" : 2,
                                 "CORPORATE SERVICES" : 3, "CREATIVE" : 4, "DIGITAL MARKETING" : 5,
@@ -150,126 +144,132 @@ if check_password():
 
         return user_input
 
-    ###
+    
+    ###########################
+    #Importing data from gsheet
+    ###########################
 
-    ###########
-    #user_input
-    ##########
+    from gsheetsdb import connect
+    from google.oauth2 import service_account
+    import streamlit as st
+    import pandas as pd
 
-    st.subheader(""" Input chosen:
-    """)
-    st.dataframe(user_input, height = 70, hide_index = True)
-    user_input=preprocess(dept, age_group, postdic, promoted, travel, distance, marital, edu, grad, age_joined, age_left, duration, salary, experience)
+    credentials = service_account.Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+            scopes=[
+                "https://www.googleapis.com/auth/spreadsheets",
+            ],
+        )
 
-    #predict button
+    conn = connect(credentials=credentials)
+        
+    def run_query(query):
+        rows = conn.execute(query, headers=1)
+        rows = rows.fetchall()
+        return rows
 
-    retention_predict = st.sidebar.button("Predict")
-
-
-
-    ####################
-    #Export data from gdrive
-    #####################
-
-    # credentials = service_account.Credentials.from_service_account_info(
-    #     st.secrets["type"],
-    #     scopes=[
-    #         "https://www.googleapis.com/auth/spreadsheets",
-    #     ],
-    # )
-    # conn = connect(credentials=credentials)
-
-    # # @st.cache_data(ttl=600)
-    # sheet_url = st.secrets["private_gsheets_url"]
-
-    # gc = gspread.authorize(credentials)
-    # sheet = gc.open_by_url(sheet_url).sheet1  # Replace 'sheet1' with the specific sheet name if needed
-    # data = sheet.get_all_records()
-
-    # # Convert the data to a pandas DataFrame
-    # df = pd.DataFrame(data)
+    sheet_url = st.secrets["private_gsheets_url"]
+    rows = run_query(f'SELECT * FROM "{sheet_url}"')
+    df_input = pd.DataFrame(rows)
 
     ####################
     #SHAP explainability
     ####################
+    
+    def generate_shap_waterfall_plot(df, user_input):
 
-    df = pd.read_csv("cleaneddata.csv")
+        #encoding categorical varible
+        department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
+                        'CORPORATE SERVICES': 4, 'COMMERCIAL': 5, 'SYSTEM': 6, 'ANALYTICS': 7,
+                        'PRODUCTS': 8, 'TALENT MANAGEMENT': 9}
 
-    #encoding categorical varible
-    department_map = {'FINANCE': 0, 'DIGITAL MARKETING': 1, 'CREATIVE': 2, 'CALL CENTRE': 3,
-                    'CORPORATE SERVICES': 4, 'COMMERCIAL': 5, 'SYSTEM': 6, 'ANALYTICS': 7,
-                    'PRODUCTS': 8, 'TALENT MANAGEMENT': 9}
+        postdic_map = {'NOT APPLICABLE': 0, '1.1 - 2.9 [Req Imp]': 1, '3.0 - 3.9 [Good Work Attitude]':2, 'Above 4.0 [Positive Influence]':3}
 
-    postdic_map = {'NOT APPLICABLE': 0, '1.1 - 2.9 [Req Imp]': 1, '3.0 - 3.9 [Good Work Attitude]':2, 'Above 4.0 [Positive Influence]':3}
+        business_travel_map = {'YES': 1, 'NO': 0}
 
-    business_travel_map = {'YES': 1, 'NO': 0}
+        married_map = {'Married': 0, 'Widow': 1, 'Single':2, 'Divorce':3}
 
-    married_map = {'Married': 0, 'Widow': 1, 'Single':2, 'Divorce':3}
+        target_map = {'stay': 0, 'left':1}
 
-    target_map = {'stay': 0, 'left':1}
+        promotion_map = {'NO': 0, 'YES':1}
 
-    promotion_map = {'NO': 0, 'YES':1}
+        age_map = {'30-34' : 2, '35-39' : 3, '55-59' : 6, '25-29' : 1, '45-49' : 5, '40-44' : 4,
+            '20-24' : 0}
 
-    age_map = {'30-34' : 2, '35-39' : 3, '55-59' : 6, '25-29' : 1, '45-49' : 5, '40-44' : 4,
-        '20-24' : 0}
+        edu_map = {'HS': 0, 'STP': 1, 'Cert': 2, 'Sijil' : 3, 'Dip': 4, 'Dg': 5, 'M': 6, 'P': 7, 'PC': 8}
 
-    edu_map = {'HS': 0, 'STP': 1, 'Cert': 2, 'Sijil' : 3, 'Dip': 4, 'Dg': 5, 'M': 6, 'P': 7, 'PC': 8}
+        localoverseas_map = {'L': 0, 'O':1}
 
-    localoverseas_map = {'L': 0, 'O':1}
+        # Map values to columns using the map() function
+        df['dept'] = df['dept'].map(department_map)
+        df['POSTDIC_SCORE_2021'] = df['POSTDIC_SCORE_2021'].map(postdic_map)
+        df['postdic'] = df['postdic'].map(postdic_map)
+        df['travel'] = df['travel'].map(business_travel_map)
+        df['marital'] = df['marital'].map(married_map)
+        df['Status'] =df['Status'].map(target_map)
+        df['promoted'] =df['promoted'].map(promotion_map)
+        df['age_group'] =df['age_group'].map(age_map)
+        df['edu'] =df['edu'].map(edu_map)
+        df['grad'] =df['grad'].map(localoverseas_map)
 
-    # Map values to columns using the map() function
-    df['dept'] = df['dept'].map(department_map)
-    df['POSTDIC SCORE 2021'] = df['POSTDIC SCORE 2021'].map(postdic_map)
-    df['postdic'] = df['postdic'].map(postdic_map)
-    df['travel'] = df['travel'].map(business_travel_map)
-    df['marital'] = df['marital'].map(married_map)
-    df['Status'] =df['Status'].map(target_map)
-    df['promoted'] =df['promoted'].map(promotion_map)
-    df['age_group'] =df['age_group'].map(age_map)
-    df['edu'] =df['edu'].map(edu_map)
-    df['grad'] =df['grad'].map(localoverseas_map)
+        df['distance'] = df['distance'].astype(int)
+        df['age_left'] = df['age_left'].astype(int)
+        df['salary'] = df['salary'].astype(int)
+        df['experience'] = df['experience'].astype(int)
 
-    df['distance'] = df['distance'].astype(int)
-    df['age_left'] = df['age_left'].astype(int)
-    df['salary'] = df['salary'].astype(int)
-    df['experience'] = df['experience'].astype(int)
+        X = df.drop(columns = ['Status', 'POSTDIC_SCORE_2021' , 'Month_of_resignation'], axis = 1)
+        y = df[['Status']]
+        # y_ravel = y.values.ravel()
 
-    X = df.drop(columns = ['Status', 'POSTDIC SCORE 2021' , 'Month of resignation'], axis = 1)
-    y = df[['Status']]
-    # y_ravel = y.values.ravel()
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
+        shap.initjs()
+        vectorizer = TfidfVectorizer(min_df=1)
+        X_train_v = vectorizer.fit_transform(X_train)
+        X_test_v = vectorizer.transform(user_input)
 
-    import shap
-    from sklearn.feature_extraction.text import TfidfVectorizer
+        explainer = shap.KernelExplainer(model.predict, X_train)
+        shap_values = explainer(user_input)
+        fig = shap.plots.waterfall(shap_values[0])
 
-    shap.initjs()
-    vectorizer = TfidfVectorizer(min_df=1)
-    X_train_v = vectorizer.fit_transform(X_train)
-    X_test_v = vectorizer.transform(user_input)
-
-    explainer = shap.KernelExplainer(model.predict, X_train)
-    shap_values = explainer(user_input)
-    fig = shap.plots.waterfall(shap_values[0])
+        return fig
 
     ############
-    #Result
-    ###########
+    #Call def
+    ############
 
-    st.subheader("Result:")
+    #get the data from get_user_input def
+    data = get_user_input()
+    user_input = pd.DataFrame(data)
+
+    retention_predict = st.sidebar.button("Predict")
+
+    #display chosen input
+    st.subheader(""" Input chosen:
+    """)
+    st.dataframe(user_input, height = 70, hide_index = True)
+    
+    # #feature engineering of the user input
+    user_input=preprocess(user_input=user_input)
+
+    #Prediction code
     st.write("Press predict to see result")
+
 
     if retention_predict:
         pred = model.predict_proba(user_input)[:, 1]
 
         if pred[0] >= 0.50:
+            st.subheader("Result:")
             st.error('Warning! The applicant has a high risk of resigning from Invoke!')
             st.subheader('Percentage of resigning:')
             st.header(f"{round((pred[0]*100), 2).astype(str)}%")
             st.subheader('Result Interpretability:')
-            st.pyplot(fig)
+            chart = generate_shap_waterfall_plot(df_input, user_input)
+            # Display the SHAP waterfall plot
+            st.pyplot(chart)
             st.markdown("""
-                        Understanding the graph:
+                Understanding the graph:
                 1. The graph explains how the model decides if someone will resign for Invoke.
                 2. Each person is represented by a top bar, showing the model's final decision for them (e.g., 1 = "will leave" or 0 = "will stay"). 
                 3. Colored bars below the top bar represent different aspects about that person, like Post Dic Score, Age Group, and Salary. 
@@ -282,11 +282,14 @@ if check_password():
                 """)
             
         else:
+            st.subheader("Result:")
             st.success('It is green! The applicant has a low risk to resigning from Invoke!')
             st.subheader('Percentage of resigning:')
             st.header(f"{round((pred[0]*100), 2).astype(str)}%")
             st.subheader('Result Interpretability:')
-            st.pyplot(fig)
+            # st.dataframe(df_input)
+            chart = generate_shap_waterfall_plot(df_input, user_input)
+            st.pyplot(chart)
             st.markdown("""
                 Understanding the graph:
                 1. The graph explains how the model decides if someone will resign for Invoke.
