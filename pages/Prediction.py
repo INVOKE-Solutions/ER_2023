@@ -108,7 +108,7 @@ if check_password():
         else:
                 st.error("Error: Current age must be more than or equal to the age of joining.")
 
-        duration=st.sidebar.number_input("Duration of Employment (months):",min_value=0, max_value=70,step=1, value = 12, format = "%d")
+        duration=st.sidebar.number_input("Duration of Employment (months):",min_value=0, max_value=100,step=1, value = 12, format = "%d")
         salary=st.sidebar.slider("Monthly Salary (RM):",min_value=0, max_value=10000,step=50, value = 3000)
         experience=st.sidebar.number_input("Years of Experience:",min_value=0, max_value=30,step=1, value = 1, format = "%d")
 
