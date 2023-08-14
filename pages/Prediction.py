@@ -217,7 +217,7 @@ if check_password():
         df['salary'] = df['salary'].astype(int)
         df['experience'] = df['experience'].astype(int)
 
-        X = df.drop(columns = ['code_name', 'Month_of_resignation', 'POSTDIC_SCORE_2021' ,'Status_', 'Status', 'Predicted_Probability_Class1', 'Predicted_Class'], axis = 1)
+        X = df.drop(columns = ['code_name', 'Month_of_resignation', 'POSTDIC_SCORE_2021' ,'Status_', 'Status', 'Probability_of_Resigning', 'Predicted_Class'], axis = 1)
         y = df[['Status']] 
         # y_ravel = y.values.ravel()
 
