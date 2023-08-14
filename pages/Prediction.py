@@ -217,8 +217,8 @@ if check_password():
         df['salary'] = df['salary'].astype(int)
         df['experience'] = df['experience'].astype(int)
 
-        X = df.drop(columns = ['Status', 'POSTDIC_SCORE_2021' , 'Month_of_resignation'], axis = 1)
-        y = df[['Status']]
+        X = df.drop(columns = ['code_name', 'Month_of_resignation', 'POSTDIC_SCORE_2021' ,'Status_', 'Status', 'Predicted_Probability_Class1', 'Predicted_Class'], axis = 1)
+        y = df[['Status']] 
         # y_ravel = y.values.ravel()
 
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
