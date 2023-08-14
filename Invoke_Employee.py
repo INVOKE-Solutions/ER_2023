@@ -125,6 +125,18 @@ if check_password():
 
     # Color the rows red for predict_proba >.50 (employee high likely to resign)
     styled_df = df_predictproba.style.applymap(lambda x: 'background-color: red' if x > 0.50 else 'background-color: green', subset=['Probability_of_Resigning'])
+    st.write("""
+             **Quick Insights: Red and Green Highlights**
+
+            In this table, you'll see numbers highlighted in red and green. 
+
+            - **Green**: High chance the employee will stay.
+            - **Red**: Higher chance the employee might leave.
+
+            **Numbers**: They represent the estimated chance of leaving or staying. For example, 0.30 means 30% chance of leaving.
+
+
+             """)
     st.dataframe(styled_df, hide_index= True)
 
 
